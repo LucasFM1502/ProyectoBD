@@ -3,7 +3,7 @@ const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
 
 const router = express.Router();
-const CARTS_FILE = 'carrito.json';
+const CARTS_FILE = './routes/carrito.json';
 
 // Middleware para cargar los carritos desde el archivo
 router.use((req, res, next) => {

@@ -1,0 +1,25 @@
+[
+    {
+      "id": "c123",
+      "products": [
+        {
+          "product": "1",
+          "quantity": 2
+        },
+        {
+          "product": "3",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "c456",
+      "products": [
+        {
+          "product": "2",
+          "quantity": 3
+        }
+      ]
+    }
+  ]
+  

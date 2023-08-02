@@ -1,0 +1,30 @@
+[
+    {
+      "id": "1",
+      "title": "Mortal Kombat X",
+      "description": "Juego de Pelea, Multijugador, En Linea",
+      "price": 5500,
+      "code": "MK123",
+      "stock": 10,
+      "img": "Foto MKX"
+    },
+    {
+      "id": "2",
+      "title": "Hogwarts Legacy",
+      "description": "Open World, Historia, Singleplayer",
+      "price": 8000,
+      "code": "HL123",
+      "stock": 10,
+      "img": "Foto HL"
+    },
+    {
+      "id": "3",
+      "title": "Left 4 Dead 2",
+      "description": "Shooter, Multijugador, En Linea",
+      "price": 3000,
+      "code": "LD42",
+      "stock": 10,
+      "img": "Foto L4D2"
+    }
+  ]
+  

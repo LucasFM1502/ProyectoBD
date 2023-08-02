@@ -3,7 +3,7 @@ const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
 
 const router = express.Router();
-const PRODUCTS_FILE = 'productos.json';
+const PRODUCTS_FILE = './routes/productos.json';
 
 // Middleware para cargar los productos desde el archivo
 router.use((req, res, next) => {
