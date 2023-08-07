@@ -1,5 +1,5 @@
 const express = require('express');
-const handlebars = require('express-handlebars');
+const exphbs = require('express-handlebars');
 const http = require('http');
 const socketio = require('socket.io');
 const productsRouter = require('./routes/products');
@@ -10,7 +10,7 @@ const PORT = 8080;
 // Configuración de Handlebars como motor de plantillas
 app.engine(
   'handlebars',
-  handlebars({
+  exphbs({
     defaultLayout: 'main',
     layoutsDir: `${__dirname}/views/layouts`,
   })
