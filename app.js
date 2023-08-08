@@ -8,17 +8,21 @@ const app = express();
 const PORT = 8080;
 
 // Configuración de Handlebars como motor de plantillas
-app.engine(
-  'handlebars',
-  exphbs({
-    defaultLayout: 'main',
-    layoutsDir: `${__dirname}/views/layouts`,
-  })
-);
+const hbs = exphbs.create({
+  defaultLayout: 'main',
+  layoutsDir: `${__dirname}/views/layouts`,
+});
+
+app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 // Rutas para los productos
 app.use('/api/products', productsRouter);
+
+// Ruta para la vista home
+app.get('/', (req, res) => {
+  res.render('home', { layout: 'main' });
+});
 
 // Configurar el servidor HTTP para usar socket.io
 const server = http.createServer(app);
