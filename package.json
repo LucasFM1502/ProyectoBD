@@ -21,6 +21,12 @@
   "homepage": "https://github.com/LucasFM1502/ProyectoBD#readme",
   "dependencies": {
     "body-parser": "^1.20.2",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "path": "^0.12.7",
+    "socket.io": "^4.7.2",
+    "uuid": "^9.0.0"
   }
 }

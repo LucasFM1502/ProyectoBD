@@ -2,6 +2,10 @@
 <html>
 <head>
   <title>Lista de productos en tiempo real</title>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de productos en tiempo real</title>
 </head>
 <body>
   <h1>Lista de productos en tiempo real</h1>
@@ -46,8 +50,4 @@
       const formData = new FormData(addProductForm);
       const title = formData.get('title');
       const price = formData.get('price');
-      socket.emit('addProduct', { title, price });
-    });
-  </script>
-</body>
-</html>
+      socket.emit('addProduct

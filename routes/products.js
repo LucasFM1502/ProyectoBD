@@ -63,9 +63,4 @@ router.post('/', (req, res) => {
   });
 });
 
-// Ruta para la vista realTimeProducts
-router.get('/realtimeproducts', (req, res) => {
-  res.render('realTimeProducts', { layout: 'main' });
-});
-
 module.exports = router;
